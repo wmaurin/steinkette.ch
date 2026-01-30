@@ -28,6 +28,9 @@ function App() {
           </Routes>
         </div>
       </div>
+      <footer className="py-8 text-center">
+        © Alle Rechte vorbehalten
+      </footer>
     </>
   );
 }
