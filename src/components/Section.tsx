@@ -15,7 +15,7 @@ function Section({
 
   return (
     <section className={alignmentClass}>
-      <h2>{header}</h2>
+      <h2 className="mb-4">{header}</h2>
       {description && <p className="lead">{description}</p>}
       {children}
     </section>
