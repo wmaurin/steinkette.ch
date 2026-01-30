@@ -57,6 +57,7 @@ function Gallerie() {
   return (
     <Gallery
       header="Galerie"
+      center={true}
       images={images}
       columns={3}
     />
