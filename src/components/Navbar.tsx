@@ -7,7 +7,7 @@ function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const location = useLocation();
   const navLinks = [
-    { path: '/gallerie', label: 'Gallerie' },
+    { path: '/galerie', label: 'Galerie' },
     { path: '/kontakt', label: 'Kontakt' },
   ];
 

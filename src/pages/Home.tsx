@@ -42,7 +42,7 @@ function Home() {
 
       <Section>
         <p>
-          Einige meiner Ketten findest Du in der <Link to="/gallerie">Galerie</Link>, wenn Du die ganze
+          Einige meiner Ketten findest Du in der <Link to="/galerie">Galerie</Link>, wenn Du die ganze
           Auswahl sehen möchtest besuchst Du mich am besten an einem meiner
           Märkte:
         </p>
