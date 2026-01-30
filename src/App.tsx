@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import Gallerie from './pages/Gallerie';
+import Galerie from './pages/Galerie';
 import Kontakt from './pages/Kontakt';
 
 function NotFound() {
@@ -17,12 +17,12 @@ function NotFound() {
 function App() {
   return (
     <>
-      <div className="max-w-7xl mx-auto p-6">
+      <div className="max-w-5xl mx-auto p-6">
         <Navbar />
         <div className="mt-6">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/gallerie" element={<Gallerie />} />
+            <Route path="/galerie" element={<Galerie />} />
             <Route path="/kontakt" element={<Kontakt />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

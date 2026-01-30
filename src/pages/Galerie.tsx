@@ -53,7 +53,7 @@ const images = [
   { src: g25, alt: 'Steinkette 25' },
 ];
 
-function Gallerie() {
+function Galerie() {
   return (
     <Gallery
       header="Galerie"
@@ -64,4 +64,4 @@ function Gallerie() {
   );
 }
 
-export default Gallerie;
+export default Galerie;
