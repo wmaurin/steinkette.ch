@@ -200,7 +200,7 @@ nav a:hover {
 p {
   color: var(--color-muted-foreground);
   line-height: var(--line-height-relaxed);
-  margin-bottom: var(--padding-md);
+  margin-bottom: var(--padding-xl);
 }
 
 p.lead {
@@ -637,3 +637,48 @@ hr {
 :root.light .invert-on-light {
   filter: invert(1);
 }
+/* Markets table */
+.markets-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--padding-md);
+}
+
+.markets-table th,
+.markets-table td {
+  padding: var(--padding-sm) var(--padding-md);
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.markets-table th {
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.markets-table tr:hover {
+  background-color: var(--color-surface);
+}
+
+.markets-table a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.markets-table a:hover {
+  text-decoration: underline;
+}
+
+.text-muted {
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .markets-table th,
+  .markets-table td {
+    padding: var(--padding-xs) var(--padding-sm);
+    font-size: 0.9rem;
+  }
+}
+

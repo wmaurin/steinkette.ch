@@ -5,6 +5,17 @@ import home1 from '../assets/home1.jpg';
 import home2 from '../assets/home2.jpg';
 import home3 from '../assets/home3.jpg';
 
+interface Markt {
+  name: string;
+  datum: string;
+  ort: string;
+  link?: string;
+}
+
+const maerkte: Markt[] = [
+  /* { name: 'Frühlingsmarkt', datum: '22. März 2026', ort: 'Bern', link: 'https://example.com' }, */
+];
+
 function Home() {
   return (
     <>
@@ -43,12 +54,45 @@ function Home() {
         ]}
       />
 
-      <Section>
-        <p>
-          Einige meiner Ketten findest Du in der{' '}
+      <Section header="Märkte">
+        <p className="mb-8">
+           Einige meiner Ketten findest Du in der{' '}
           <Link to="/galerie">Galerie</Link>, wenn Du die ganze Auswahl sehen
           möchtest besuchst Du mich am besten an einem meiner Märkte:
         </p>
+
+        {maerkte.length === 0 ? (
+          <p>Zurzeit sind keine Märkte in naher Zukunft geplant.</p>
+        ) : (
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Datum</th>
+                <th>Ort</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              {maerkte.map((markt, index) => (
+                <tr key={index}>
+                  <td>{markt.name}</td>
+                  <td>{markt.datum}</td>
+                  <td>{markt.ort}</td>
+                  <td>
+                    {markt.link ? (
+                      <a href={markt.link} target="_blank" rel="noopener noreferrer">
+                        Mehr Infos
+                      </a>
+                    ) : (
+                      '–'
+                    )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
       </Section>
     </>
   );
