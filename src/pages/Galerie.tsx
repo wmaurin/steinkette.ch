@@ -54,14 +54,7 @@ const images = [
 ];
 
 function Galerie() {
-  return (
-    <Gallery
-      header="Galerie"
-      center={true}
-      images={images}
-      columns={3}
-    />
-  );
+  return <Gallery header="Galerie" center={true} images={images} columns={3} />;
 }
 
 export default Galerie;

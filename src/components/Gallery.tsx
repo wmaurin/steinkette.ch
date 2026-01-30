@@ -9,7 +9,13 @@ interface GalleryProps {
   center?: boolean;
 }
 
-function Gallery({ header, description, images, columns = 3, center }: GalleryProps) {
+function Gallery({
+  header,
+  description,
+  images,
+  columns = 3,
+  center,
+}: GalleryProps) {
   const breakpointColumnsObj = {
     default: columns,
     1024: columns >= 3 ? 3 : columns,
@@ -18,7 +24,11 @@ function Gallery({ header, description, images, columns = 3, center }: GalleryPr
   };
 
   return (
-    <Section header={header} description={description} aligned={center ? 'center' : 'left'}>
+    <Section
+      header={header}
+      description={description}
+      aligned={center ? 'center' : 'left'}
+    >
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className="flex w-auto -ml-4"

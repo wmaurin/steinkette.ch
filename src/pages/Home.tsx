@@ -25,10 +25,13 @@ function Home() {
           auf griechischen Inseln oder an Ufern von Flüssen in der Schweiz.
           Stundenlang bin ich jeweils auf der Suche. Später reihe ich die Steine
           mit viel Geduld und langer Hand aneinander, bis aus den ursprünglich
-          unauffälligen Kieseln ein einzigartiges Schmuckstück entsteht. Dankbar
-          bin ich der ruhigen Hand meines Partners, der es mit Hilfe eines
-          Diamantbohrers vermag die Löcher zu bohren. Diese kreative Tätigkeit
-          und was daraus entsteht erfüllt mich mit Glück und Freude.
+          unauffälligen Kieseln ein einzigartiges Schmuckstück entsteht.
+        </p>
+
+        <p>
+          Dankbar bin ich der ruhigen Hand meines Partners, der es mit Hilfe
+          eines Diamantbohrers vermag die Löcher zu bohren. Diese kreative
+          Tätigkeit und was daraus entsteht erfüllt mich mit Glück und Freude.
         </p>
       </Section>
 
@@ -42,9 +45,9 @@ function Home() {
 
       <Section>
         <p>
-          Einige meiner Ketten findest Du in der <Link to="/galerie">Galerie</Link>, wenn Du die ganze
-          Auswahl sehen möchtest besuchst Du mich am besten an einem meiner
-          Märkte:
+          Einige meiner Ketten findest Du in der{' '}
+          <Link to="/galerie">Galerie</Link>, wenn Du die ganze Auswahl sehen
+          möchtest besuchst Du mich am besten an einem meiner Märkte:
         </p>
       </Section>
     </>
