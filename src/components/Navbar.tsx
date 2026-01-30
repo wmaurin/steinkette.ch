@@ -7,6 +7,7 @@ function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const location = useLocation();
   const navLinks = [
+    { path: '/', label: 'Home' },
     { path: '/galerie', label: 'Galerie' },
     { path: '/kontakt', label: 'Kontakt' },
   ];
@@ -17,12 +18,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="flex justify-between items-center">
-        <div>
-          <strong>
-            <Link to="/">Steinkette</Link>
-          </strong>
-        </div>
+      <nav className="flex justify-end items-center">
         <div className="flex items-center gap-6">
           {/* Desktop navigation */}
           <div className="hidden md:flex items-center gap-6">
