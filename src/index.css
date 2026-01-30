@@ -240,7 +240,7 @@ button {
   background-color: var(--color-primary);
   color: var(--color-primary-foreground);
   border: none;
-  padding: var(--padding-sm) var(--padding-xl);
+  padding: var(--padding-lg) var(--padding-xl);
   border-radius: var(--border-radius-md);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
